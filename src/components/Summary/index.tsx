@@ -3,12 +3,12 @@ import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
 import totalImg from "../../assets/total.svg";
 import { useContext } from "react";
-import { TransactionContext } from "../../assets/TransactionContext";
+import { TransactionContext } from "../../TransactionContext";
 
 export default function Summary() {
-  const transaction = useContext(TransactionContext);
+  const { transactions } = useContext(TransactionContext);
 
-  console.log("Transaction no Summary", transaction);
+  console.log("Transaction no Summary", transactions);
 
   return (
     <>
